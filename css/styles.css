@@ -3,6 +3,7 @@
   --secondary-color: #f5f2fe;
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
+
 .container-fluid {
   margin: 5px 80px;
 }
@@ -31,7 +32,7 @@ h1,
 h2,
 h3 {
   text-align: center;
-  margin: 0;
+  margin: 0 auto;
 }
 
 h1 {
@@ -53,9 +54,6 @@ p {
   font-size: 18px;
   line-height: 1.5;
   text-align: center;
-}
-.project-info {
-  text-align: left;
 }
 
 hr {
@@ -113,7 +111,8 @@ hr {
 
 .about-paragraphs {
   display: flex;
-  margin: 30px 0;
+
+  margin: 15px 0;
 }
 
 .about-paragraphs p {
@@ -129,6 +128,7 @@ hr {
   border-radius: 5px;
   width: 100%;
   box-shadow: var(--box-shadow);
+  
 }
 
 .email-link {
@@ -145,4 +145,13 @@ hr {
 
 #contact {
   margin-top: 50px;
+}
+
+@media (max-width: 578px) {
+  h1 {
+    font-size: 60px;
+  }
+  .view-project {
+    display: none;
+  }
 }
